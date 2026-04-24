@@ -1,0 +1,65 @@
+# Build folders
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vs/
+*.vscode/
+
+# Rider
+.idea/
+
+# Logs
+*.log
+
+# NuGet
+packages/
+*.nupkg
+.nuget/
+
+# Publish output
+publish/
+wwwroot/dist/
+
+# Test Results
+TestResults/
+*.trx
+coverage/
+coverage-results/
+
+# EF Core local db
+*.mdf
+*.ldf
+
+# SQL Lite
+*.db
+*.db-shm
+*.db-wal
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Secrets
+appsettings.Development.json
+secrets.json
+
+# Azure
+.publishsettings
+
+# Node (if frontend added later)
+node_modules/
+
+# Temp
+*.tmp
+*.temp
+
+# Generated files
+Generated/
