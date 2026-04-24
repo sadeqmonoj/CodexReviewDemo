@@ -33,6 +33,20 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast");
 
+app.MapPost("/login", (string username, string password) =>
+{
+    // This is just a placeholder for demonstration purposes.
+    // In a real application, you would validate the username and password against a database or authentication service.
+    if (username == "admin" && password == "password")
+    {
+        return Results.Ok("Login successful");
+    }
+    else
+    {
+        return Results.Unauthorized();
+    }
+});
+
 app.Run();
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
